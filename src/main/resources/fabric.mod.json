@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mienmod",
+	"version": "${version}",
+	"name": "MienMod",
+	"description": "Make some blocks smoother",
+	"authors": [
+		"米恩Simon"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mienmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.simonxwei.mienmod.MienMod"
+		],
+		"fabric-datagen": [
+			"com.simonxwei.mienmod.MienModDataGenerator"
+		],
+		"client": [
+			"com.simonxwei.mienmod.MienModClient"
+		]
+	},
+	"mixins": [
+		"mienmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
