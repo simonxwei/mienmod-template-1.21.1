@@ -24,12 +24,13 @@ public class ModItems {
         );
     };
 
-    private static void AddItemToIG(FabricItemGroupEntries fabricItemGroupEntries){
-        fabricItemGroupEntries.add(ICE_ETHER);
-    };
+//    private static void AddItemToIG(FabricItemGroupEntries fabricItemGroupEntries){
+//        fabricItemGroupEntries.add(ICE_ETHER);
+//    };
 
     public static void registerModItems(){
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::AddItemToIG);
+//        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::AddItemToIG);
+//        INGREDIENTS: 原材料
         MienMod.LOGGER.info("Registering Items");
     }
 }
