@@ -22,7 +22,7 @@ public class ModItems {
                 Identifier.of(MienMod.MOD_ID, id),
                 item
         );
-    };
+    }
 
 //    private static void AddItemToIG(FabricItemGroupEntries fabricItemGroupEntries){
 //        fabricItemGroupEntries.add(ICE_ETHER);
