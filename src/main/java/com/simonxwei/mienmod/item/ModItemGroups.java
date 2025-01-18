@@ -22,8 +22,11 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.ICE_ETHER))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.ICE_ETHER);
-                        entries.add(Blocks.BRICKS);
-                        entries.add(Items.DIAMOND);
+                        entries.add(ModItems.RAW_ICE_ETHER);
+
+//                        entries.add(Blocks.BRICKS);
+//                        entries.add(Items.DIAMOND);
+// 可以添加其他物品和方块
 
                         entries.add(ModBlocks.ICE_ETHER_BLOCK);
                         entries.add(ModBlocks.ICE_ETHER_ORE);

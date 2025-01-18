@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item ICE_ETHER = registerItems("ice_ether", new Item(new Item.Settings()));
+    public static final Item RAW_ICE_ETHER = registerItems("raw_ice_ether", new Item(new Item.Settings()));
 
     private static Item registerItems(String id, Item item) {
         return  (Item)Registry.register(
@@ -27,6 +28,7 @@ public class ModItems {
 //    private static void AddItemToIG(FabricItemGroupEntries fabricItemGroupEntries){
 //        fabricItemGroupEntries.add(ICE_ETHER);
 //    };
+// 添加物品到原版物品组的最后
 
     public static void registerModItems() {
 //        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::AddItemToIG);
