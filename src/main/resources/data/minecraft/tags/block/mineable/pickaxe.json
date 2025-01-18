@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "mienmod:ice_ether_block",
+    "mienmod:ice_ether_ore",
+    "mienmod:raw_ice_ether_block"
+  ]
+}
