@@ -1,6 +1,7 @@
 package com.simonxwei.mienmod.item;
 
 import com.simonxwei.mienmod.MienMod;
+import com.simonxwei.mienmod.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
@@ -23,10 +24,15 @@ public class ModItemGroups {
                         entries.add(ModItems.ICE_ETHER);
                         entries.add(Blocks.BRICKS);
                         entries.add(Items.DIAMOND);
+
+                        entries.add(ModBlocks.ICE_ETHER_BLOCK);
+                        entries.add(ModBlocks.ICE_ETHER_ORE);
+                        entries.add(ModBlocks.RAW_ICE_ETHER_BLOCK);
                     })
                     .build()
     );
-    public static void registerModItemGroups(){
+
+    public static void registerModItemGroups() {
         MienMod.LOGGER.info("Registering Item Groups");
     }
 }

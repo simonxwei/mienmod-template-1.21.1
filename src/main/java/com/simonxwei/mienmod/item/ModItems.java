@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item ICE_ETHER = registerItems("ice_ether", new Item(new Item.Settings()));
 
-    private static Item registerItems(String id, Item item){
+    private static Item registerItems(String id, Item item) {
         return  (Item)Registry.register(
                 Registries.ITEM,
                 Identifier.of(MienMod.MOD_ID, id),
@@ -28,7 +28,7 @@ public class ModItems {
 //        fabricItemGroupEntries.add(ICE_ETHER);
 //    };
 
-    public static void registerModItems(){
+    public static void registerModItems() {
 //        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::AddItemToIG);
 //        INGREDIENTS: 原材料
         MienMod.LOGGER.info("Registering Items");

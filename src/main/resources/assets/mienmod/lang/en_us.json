@@ -1,4 +1,9 @@
 {
+  "ItemGroup.mien_group": "Mien Group",
+
   "item.mienmod.ice_ether": "Ice Ether",
-  "ItemGroup.mien_group": "Mien Group"
+
+  "block.mienmod.ice_ether_block": "Ice Ether Block",
+  "block.mienmod.ice_ether_ore": "Ice Ether Ore",
+  "block.mienmod.raw_ice_ether_block": "Raw Ice Ether Block"
 }

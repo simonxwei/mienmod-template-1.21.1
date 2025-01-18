@@ -1,5 +1,6 @@
 package com.simonxwei.mienmod;
 
+import com.simonxwei.mienmod.block.ModBlocks;
 import com.simonxwei.mienmod.item.ModItemGroups;
 import com.simonxwei.mienmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -23,6 +24,7 @@ public class MienMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
+		ModBlocks.registerBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 	}

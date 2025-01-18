@@ -1,4 +1,9 @@
 {
-  "item.mienmod.ice_ether": "厉不厉害昌钰",
-  "ItemGroup.mien_group": "自制群组"
+  "ItemGroup.mien_group": "自制模组群组",
+
+  "item.mienmod.ice_ether": "冰之以太",
+
+  "block.mienmod.ice_ether_block": "冰之以太块",
+  "block.mienmod.ice_ether_ore": "冰之以太矿石",
+  "block.mienmod.raw_ice_ether_block": "生冰之以太块"
 }
