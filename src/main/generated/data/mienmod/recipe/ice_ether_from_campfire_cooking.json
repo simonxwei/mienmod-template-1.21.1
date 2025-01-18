@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "mienmod:raw_ice_ether"
+  },
+  "result": {
+    "id": "mienmod:ice_ether"
+  }
+}

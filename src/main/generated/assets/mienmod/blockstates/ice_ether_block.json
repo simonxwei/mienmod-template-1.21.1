@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mienmod:block/ice_ether_block"
+    }
+  }
+}
