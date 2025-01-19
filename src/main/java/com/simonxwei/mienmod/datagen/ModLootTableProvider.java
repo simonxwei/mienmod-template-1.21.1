@@ -28,15 +28,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+//        普通方块掉落物，不书写则是否采用相应工具，均无掉落物
         addDrop(ModBlocks.ICE_ETHER_BLOCK);
         addDrop(ModBlocks.RAW_ICE_ETHER_BLOCK);
 
 //        addDrop(ModBlocks.ICE_ETHER_ORE, oreDrops(ModBlocks.ICE_ETHER_ORE, ModItems.RAW_ICE_ETHER));
 //        为默认写法，但是无法修改掉落数量，因为MienItemGroup中的简写导致无法调用本体设置的传参
+
+//        矿石方块掉落物
         addDrop(ModBlocks.ICE_ETHER_ORE, copperOreLikeDrops(ModBlocks.ICE_ETHER_ORE, ModItems.RAW_ICE_ETHER));
     }
 
-//    修改本体addDroup中copper的写法
+//    修改本体addDroup中copper的写法，增加dropItem传参
     public LootTable.Builder copperOreLikeDrops(Block drop, Item dropItem) {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
         return this.dropsWithSilkTouch(

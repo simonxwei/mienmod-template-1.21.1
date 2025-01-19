@@ -3,6 +3,9 @@
   "block.mienmod.ice_ether_block": "Ice Ether Block",
   "block.mienmod.ice_ether_ore": "Ice Ether Ore",
   "block.mienmod.raw_ice_ether_block": "Raw Ice Ether Block",
+  "item.mienmod.anthracite": "Anthracite",
+  "item.mienmod.cheese": "Cheese",
   "item.mienmod.ice_ether": "Ice Ether",
-  "item.mienmod.raw_ice_ether": "Raw Ice Ether"
+  "item.mienmod.raw_ice_ether": "Raw Ice Ether",
+  "item.mienmod.strawberry": "Strawberry"
 }

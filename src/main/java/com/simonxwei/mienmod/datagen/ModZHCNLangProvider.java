@@ -15,11 +15,17 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
+//        自制物品组翻译
         translationBuilder.add("ItemGroup.mien_group", "自制模组群组");
 
+//        普通物品翻译
         translationBuilder.add(ModItems.ICE_ETHER, "冰之以太");
         translationBuilder.add(ModItems.RAW_ICE_ETHER, "生冰之以太");
+        translationBuilder.add(ModItems.CHEESE, "奶酪");
+        translationBuilder.add(ModItems.STRAWBERRY, "草莓");
+        translationBuilder.add(ModItems.ANTHRACITE, "无烟煤");
 
+//        方块物品翻译
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "冰之以太块");
         translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "冰之以太矿");
         translationBuilder.add(ModBlocks.RAW_ICE_ETHER_BLOCK, "生冰之以太块");

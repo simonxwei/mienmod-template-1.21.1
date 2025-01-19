@@ -3,6 +3,9 @@
   "block.mienmod.ice_ether_block": "冰之以太块",
   "block.mienmod.ice_ether_ore": "冰之以太矿",
   "block.mienmod.raw_ice_ether_block": "生冰之以太块",
+  "item.mienmod.anthracite": "无烟煤",
+  "item.mienmod.cheese": "奶酪",
   "item.mienmod.ice_ether": "冰之以太",
-  "item.mienmod.raw_ice_ether": "生冰之以太"
+  "item.mienmod.raw_ice_ether": "生冰之以太",
+  "item.mienmod.strawberry": "草莓"
 }

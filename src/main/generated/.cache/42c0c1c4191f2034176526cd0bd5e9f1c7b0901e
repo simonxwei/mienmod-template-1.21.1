@@ -1,12 +1,15 @@
-// 1.21.1	2025-01-19T02:51:23.4983541	MienMod/Model Definitions
+// 1.21.1	2025-01-21T13:02:19.0905057	MienMod/Model Definitions
 eab3e5b8569740bd14362ec5e0ea311109b41d30 assets\mienmod\models\item\raw_ice_ether_block.json
-9576693416bd5c2668624117ca8dab4686aa1ad8 assets\mienmod\blockstates\ice_ether_block.json
-58cecc5f6ce2cc830ce4f2a96f02c9c04ca35223 assets\mienmod\models\item\ice_ether_ore.json
-25a3a5383995d23bfae987dc0aa9819cf8f93e56 assets\mienmod\models\item\ice_ether_block.json
 81d26d43ed96c5f7b7c1865e6427d15d1b20b6ad assets\mienmod\models\block\ice_ether_block.json
-16db6b1a794fc2c583b84ce1fc35c9eabf5780e9 assets\mienmod\models\block\ice_ether_ore.json
-be0ce2ece30775e1c885fcb63deff98a3455f0bd assets\mienmod\blockstates\ice_ether_ore.json
-88e76e07c9d66348dddc44c0bce46ce769fe6bcf assets\mienmod\models\item\raw_ice_ether.json
 22e1abec04f6ca869a39b0c661546b5d43c8790e assets\mienmod\models\block\raw_ice_ether_block.json
+be0ce2ece30775e1c885fcb63deff98a3455f0bd assets\mienmod\blockstates\ice_ether_ore.json
 a21198d6e4a2c1fd2abae1e0ed6710bd7dd17c8e assets\mienmod\blockstates\raw_ice_ether_block.json
 118d2b6f23d6a0fe4221bb3d1475b52612f7b4dc assets\mienmod\models\item\ice_ether.json
+9576693416bd5c2668624117ca8dab4686aa1ad8 assets\mienmod\blockstates\ice_ether_block.json
+58cecc5f6ce2cc830ce4f2a96f02c9c04ca35223 assets\mienmod\models\item\ice_ether_ore.json
+638eca54e78143a5c3a82fd77a0cb83c0fa28af0 assets\mienmod\models\item\cheese.json
+25a3a5383995d23bfae987dc0aa9819cf8f93e56 assets\mienmod\models\item\ice_ether_block.json
+16db6b1a794fc2c583b84ce1fc35c9eabf5780e9 assets\mienmod\models\block\ice_ether_ore.json
+3dc243e277ee9581987bc56b58dbb5103cb160bb assets\mienmod\models\item\strawberry.json
+b31bd7619ac1c5fbbbab74b49dd6702c5e1e8649 assets\mienmod\models\item\anthracite.json
+88e76e07c9d66348dddc44c0bce46ce769fe6bcf assets\mienmod\models\item\raw_ice_ether.json
