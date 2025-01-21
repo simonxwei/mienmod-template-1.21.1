@@ -29,6 +29,11 @@ public class ModItems {
             "anthracite",
             new Item(new Item.Settings())
     );
+//    2D -> 3D渲染物品
+    public static final Item PLATE = registerItems(
+            "plate",
+            new Item(new Item.Settings())
+    );
 
 //    食物
     public static final Item CHEESE = registerItems(

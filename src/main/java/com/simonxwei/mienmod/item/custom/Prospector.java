@@ -8,12 +8,16 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+
+import java.util.List;
 
 //extends表示继承原版Item类（高级物品）
 public class Prospector extends Item {
@@ -83,5 +87,17 @@ public class Prospector extends Item {
 //    自定义isRightBlock方法用于判断是否为矿石
     private boolean isRightBlock(BlockState blockState) {
         return blockState.isIn(ModBlockTags.ORE_LIST);
+    }
+
+//    工具提示信息，通过字典形式添加键，通过语言文件添加值
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        super.appendTooltip(stack, context, tooltip, type);
+        if (Screen.hasShiftDown()) {
+            tooltip.add(Text.translatable("item.mienmod.prospector.shift_tooltip"));
+        }
+        else {
+            tooltip.add(Text.translatable("item.mienmod.prospector.tooltip"));
+        }
     }
 }

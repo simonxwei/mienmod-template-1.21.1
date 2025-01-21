@@ -25,6 +25,7 @@ public class ModENUSLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.CHEESE, "Cheese");
         translationBuilder.add(ModItems.STRAWBERRY, "Strawberry");
         translationBuilder.add(ModItems.ANTHRACITE, "Anthracite");
+        translationBuilder.add(ModItems.PLATE, "Plate");
 
 //        高级物品翻译
         translationBuilder.add((ModItems.PROSPECTOR), "Prospector");
@@ -33,5 +34,9 @@ public class ModENUSLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "Ice Ether Block");
         translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "Ice Ether Ore");
         translationBuilder.add(ModBlocks.RAW_ICE_ETHER_BLOCK, "Raw Ice Ether Block");
+
+//        提示信息翻译
+        translationBuilder.add("item.mienmod.prospector.shift_tooltip", "A tool used to prospect ores");
+        translationBuilder.add("item.mienmod.prospector.tooltip", "Hold §6SHIFT§r for more information");
     }
 }

@@ -24,6 +24,7 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.CHEESE, "奶酪");
         translationBuilder.add(ModItems.STRAWBERRY, "草莓");
         translationBuilder.add(ModItems.ANTHRACITE, "无烟煤");
+        translationBuilder.add(ModItems.PLATE, "盘子");
 
 //        高级物品翻译
         translationBuilder.add((ModItems.PROSPECTOR), "探矿器");
@@ -32,5 +33,9 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "冰之以太块");
         translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "冰之以太矿");
         translationBuilder.add(ModBlocks.RAW_ICE_ETHER_BLOCK, "生冰之以太块");
+
+//        提示信息翻译
+        translationBuilder.add("item.mienmod.prospector.shift_tooltip", "用于探矿的工具");
+        translationBuilder.add("item.mienmod.prospector.tooltip", "按住§6SHIFT§r键查看更多信息");
     }
 }

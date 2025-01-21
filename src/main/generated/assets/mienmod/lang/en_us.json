@@ -6,7 +6,10 @@
   "item.mienmod.anthracite": "Anthracite",
   "item.mienmod.cheese": "Cheese",
   "item.mienmod.ice_ether": "Ice Ether",
+  "item.mienmod.plate": "Plate",
   "item.mienmod.prospector": "Prospector",
+  "item.mienmod.prospector.shift_tooltip": "A tool used to prospect ores",
+  "item.mienmod.prospector.tooltip": "Hold §6SHIFT§r for more information",
   "item.mienmod.raw_ice_ether": "Raw Ice Ether",
   "item.mienmod.strawberry": "Strawberry"
 }
