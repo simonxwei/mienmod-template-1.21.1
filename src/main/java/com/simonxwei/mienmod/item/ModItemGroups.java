@@ -31,6 +31,9 @@ public class ModItemGroups {
                         entries.add(ModItems.STRAWBERRY);
                         entries.add(ModItems.ANTHRACITE);
 
+//                        高级物品
+                        entries.add(ModItems.PROSPECTOR);
+
 //                        方块物品
                         entries.add(ModBlocks.ICE_ETHER_BLOCK);
                         entries.add(ModBlocks.ICE_ETHER_ORE);

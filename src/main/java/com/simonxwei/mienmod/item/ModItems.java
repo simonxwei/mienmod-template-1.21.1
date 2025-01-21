@@ -1,6 +1,7 @@
 package com.simonxwei.mienmod.item;
 
 import com.simonxwei.mienmod.MienMod;
+import com.simonxwei.mienmod.item.custom.Prospector;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -37,6 +38,16 @@ public class ModItems {
     public static final Item STRAWBERRY = registerItems(
             "strawberry",
             new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY))
+    );
+
+//    高级物品
+    public static final Item PROSPECTOR = registerItems(
+            "prospector",
+            new Prospector(
+                    new Item.Settings()
+                            .maxDamage(127)
+//                    具有耐久值为128(0-127)
+            )
     );
 
 //    方块物品

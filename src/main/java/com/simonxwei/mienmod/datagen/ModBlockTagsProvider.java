@@ -1,6 +1,7 @@
 package com.simonxwei.mienmod.datagen;
 
 import com.simonxwei.mienmod.block.ModBlocks;
+import com.simonxwei.mienmod.tag.ModBlockTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -29,5 +30,17 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 //        需要石制工具
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.RAW_ICE_ETHER_BLOCK);
+
+//        创建矿石方块标签
+        getOrCreateTagBuilder(ModBlockTags.ORE_LIST)
+                .add(ModBlocks.ICE_ETHER_ORE)
+                .forceAddTag(BlockTags.COAL_ORES)
+                .forceAddTag(BlockTags.IRON_ORES)
+                .forceAddTag(BlockTags.GOLD_ORES)
+                .forceAddTag(BlockTags.LAPIS_ORES)
+                .forceAddTag(BlockTags.REDSTONE_ORES)
+                .forceAddTag(BlockTags.DIAMOND_ORES)
+                .forceAddTag(BlockTags.EMERALD_ORES)
+                .forceAddTag(BlockTags.COPPER_ORES);
     }
 }

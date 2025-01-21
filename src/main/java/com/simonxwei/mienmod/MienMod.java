@@ -4,6 +4,8 @@ import com.simonxwei.mienmod.block.ModBlocks;
 import com.simonxwei.mienmod.item.ModItemGroups;
 import com.simonxwei.mienmod.item.ModItems;
 import com.simonxwei.mienmod.mixin.GrassColorsMixin;
+import com.simonxwei.mienmod.tag.ModBlockTags;
+import com.simonxwei.mienmod.tag.ModItemTags;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -28,6 +30,8 @@ public class MienMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
 		ModBlocks.registerBlocks();
+		ModItemTags.registerModItemTags();
+		ModBlockTags.registerModBlockTags();
 
 ////		通过Mixin，获取草方块的颜色
 //		int[] colorMap = GrassColorsMixin.getColorMap();

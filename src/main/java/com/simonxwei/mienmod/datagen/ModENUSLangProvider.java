@@ -26,6 +26,9 @@ public class ModENUSLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.STRAWBERRY, "Strawberry");
         translationBuilder.add(ModItems.ANTHRACITE, "Anthracite");
 
+//        高级物品翻译
+        translationBuilder.add((ModItems.PROSPECTOR), "Prospector");
+
 //        方块物品翻译
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "Ice Ether Block");
         translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "Ice Ether Ore");

@@ -3,6 +3,7 @@ package com.simonxwei.mienmod.datagen;
 import com.simonxwei.mienmod.MienMod;
 import com.simonxwei.mienmod.block.ModBlocks;
 import com.simonxwei.mienmod.item.ModItems;
+import com.simonxwei.mienmod.tag.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -67,7 +68,10 @@ public class ModRecipesProvider extends FabricRecipeProvider {
 //        有序合成配方
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SUGAR, 3)
                 .pattern("###")
-                .input('#', Ingredient.ofItems(Items.BEETROOT))
+//                输入单个物品材料写法
+//                .input('#', Ingredient.ofItems(Items.BEETROOT))
+//                输入标签材料写法
+                .input('#', ModItemTags.SUGAR_TAG)
 //                具有以下物品时自动获取该配方
                 .criterion("has_item", RecipeProvider.conditionsFromItem(Items.BEETROOT))
 //                制作成就

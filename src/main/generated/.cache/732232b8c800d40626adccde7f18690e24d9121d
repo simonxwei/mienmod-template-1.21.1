@@ -1,4 +1,5 @@
-// 1.21.1	2025-01-21T13:02:19.0916073	MienMod/Tags for minecraft:block
+// 1.21.1	2025-01-21T16:38:52.9628848	MienMod/Tags for minecraft:block
 a09ccb28820f83f501e96a8b8d6b68a02ec30296 data\minecraft\tags\block\needs_stone_tool.json
 980ec7b6a87d5950f14415fd049e470d0e5adc6f data\minecraft\tags\block\mineable\pickaxe.json
 c5b84b447332ead5c734c82d9345e7018f9651ac data\minecraft\tags\block\needs_iron_tool.json
+74891117beda66980353c352a7570c50f23e9f78 data\mienmod\tags\block\ore_list.json

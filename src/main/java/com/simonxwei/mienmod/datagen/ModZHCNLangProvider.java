@@ -25,6 +25,9 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.STRAWBERRY, "草莓");
         translationBuilder.add(ModItems.ANTHRACITE, "无烟煤");
 
+//        高级物品翻译
+        translationBuilder.add((ModItems.PROSPECTOR), "探矿器");
+
 //        方块物品翻译
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "冰之以太块");
         translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "冰之以太矿");

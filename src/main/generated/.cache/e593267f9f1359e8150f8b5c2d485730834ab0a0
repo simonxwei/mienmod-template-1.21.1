@@ -1,8 +1,8 @@
-// 1.21.1	2025-01-21T13:02:19.0926031	MienMod/Recipes
+// 1.21.1	2025-01-21T16:38:52.9658731	MienMod/Recipes
 f246bd7b5bca3fb0f98ebdc5942ba378ffd880b2 data\mienmod\advancement\recipes\food\ice_ether_from_campfire_cooking.json
 153a36c1423b77ee3729d17b89d2aa6b639e3dc6 data\mienmod\recipe\ice_ether.json
 d2671de7e3879d1add65df6d06b06af93e809075 data\mienmod\advancement\recipes\misc\ice_ether_from_smelting_raw_ice_ether.json
-5f38b7f58fd381893a8f95f704251d1813ec5123 data\mienmod\recipe\beetroot_to_sugar.json
+b5767bc1cfb42a7ce4d42f7133383c85fc5d9b0b data\mienmod\recipe\beetroot_to_sugar.json
 0ceddd57f9c8d611473e9a43c9f4b85253d62753 data\mienmod\advancement\recipes\building_blocks\ice_ether_ore.json
 97bc3f320358fe43e1af74762c3e8ecf45c57f8f data\mienmod\recipe\ice_ether_from_blasting_raw_ice_ether.json
 f57228946080c20755a7dacb021a9b3a94ecbf25 data\mienmod\advancement\recipes\misc\ice_ether_from_smelting_ice.json
