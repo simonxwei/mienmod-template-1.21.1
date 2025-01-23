@@ -42,5 +42,22 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.DIAMOND_ORES)
                 .forceAddTag(BlockTags.EMERALD_ORES)
                 .forceAddTag(BlockTags.COPPER_ORES);
+
+//        创建栅栏、栅栏门以及门的标签，否则无法通过源代码在游戏中进行与其他方块连接
+//        栅栏需要选择且仅为一个的标签
+//        FENCES是和下界栅栏连接的标签
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.ICE_ETHER_FENCE);
+//        WOODEN_FENCES是和原木栅栏连接的标签
+//        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+//                .add(ModBlocks.ICE_ETHER_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ICE_ETHER_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.ICE_ETHER_WALL);
+
+//        木制按钮想要可以通过箭、三叉戟等射击激活功能，需要添加木制按钮标签
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(ModBlocks.ICE_ETHER_BUTTON);
     }
 }

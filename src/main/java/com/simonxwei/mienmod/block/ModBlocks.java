@@ -1,8 +1,7 @@
 package com.simonxwei.mienmod.block;
 
 import com.simonxwei.mienmod.MienMod;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -24,6 +23,66 @@ public class ModBlocks {
     public static final Block RAW_ICE_ETHER_BLOCK = register(
             "raw_ice_ether_block",
             new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f))
+    );
+//    建筑方块
+    public static final Block ICE_ETHER_STAIRS = register(
+            "ice_ether_stairs",
+//            注意方块类型，如StairsBlock
+            new StairsBlock(
+                    ICE_ETHER_BLOCK.getDefaultState(),
+//                    这里的设置是复制ICE_ETHER_BLOCK的设置，因此需要先注册ICE_ETHER_BLOCK
+//                    由于所复制的方块设置了.requiresTool()，因此需要在LootTable中设置相应的掉落物
+                    AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)
+            )
+    );
+    public static final Block ICE_ETHER_SLAB = register(
+            "ice_ether_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK))
+    );
+    public static final Block ICE_ETHER_BUTTON = register(
+            "ice_ether_button",
+//            pressTicks为按压时间，10为0.5s
+            new ButtonBlock(
+                    BlockSetType.OAK,
+                    10,
+                    AbstractBlock.Settings.copy(ICE_ETHER_BLOCK))
+    );
+    public static final Block ICE_ETHER_PRESSURE_PLATE = register(
+            "ice_ether_pressure_plate",
+            new PressurePlateBlock(
+                    BlockSetType.OAK,
+                    AbstractBlock.Settings.copy(ICE_ETHER_BLOCK))
+    );
+    public static final Block ICE_ETHER_FENCE = register(
+            "ice_ether_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK))
+    );
+    public static final Block ICE_ETHER_FENCE_GATE = register(
+            "ice_ether_fence_gate",
+            new FenceGateBlock(
+//                    FenceGateBlock需要设置木种，而不是方块种类
+                    WoodType.OAK,
+                    AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)
+            )
+    );
+    public static final Block ICE_ETHER_WALL = register(
+            "ice_ether_wall",
+            new WallBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK))
+    );
+    public static final Block ICE_ETHER_DOOR = register(
+            "ice_ether_door",
+            new DoorBlock(
+                    BlockSetType.OAK,
+                    AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)
+            )
+    );
+    public static final Block ICE_ETHER_TRAPDOOR = register(
+            "ice_ether_trapdoor",
+            new TrapdoorBlock(
+//                    除了iron铁制类型需要红石信号，其他类型都不需要
+                    BlockSetType.IRON,
+                    AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)
+            )
     );
 
 //    注册方块物品_step1
