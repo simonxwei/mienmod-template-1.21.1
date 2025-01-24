@@ -9,6 +9,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.family.BlockFamily;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -38,7 +39,22 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.ANTHRACITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FIRE_ETHER, Models.GENERATED);
 
+//        工具，注意手持模型HANDHELD
+        itemModelGenerator.register(ModItems.FIRE_ETHER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FIRE_ETHER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FIRE_ETHER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FIRE_ETHER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FIRE_ETHER_HOE, Models.HANDHELD);
+
+//        盔甲
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_ETHER_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_ETHER_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_ETHER_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_ETHER_BOOTS);
+
+//        高级物品
         itemModelGenerator.register(ModItems.PROSPECTOR, Models.GENERATED);
     }
 }

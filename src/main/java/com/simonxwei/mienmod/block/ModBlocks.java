@@ -73,7 +73,9 @@ public class ModBlocks {
             "ice_ether_door",
             new DoorBlock(
                     BlockSetType.OAK,
-                    AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)
+//                    nonOpaque()为非实体方块，即透明方块，需要与RenderLayersMixin中的代码配合
+//                    还有如木制燃烧字段等，具体查看相应材料的源代码
+                    AbstractBlock.Settings.copy(ICE_ETHER_BLOCK).nonOpaque()
             )
     );
     public static final Block ICE_ETHER_TRAPDOOR = register(
@@ -81,7 +83,7 @@ public class ModBlocks {
             new TrapdoorBlock(
 //                    除了iron铁制类型需要红石信号，其他类型都不需要
                     BlockSetType.IRON,
-                    AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)
+                    AbstractBlock.Settings.copy(ICE_ETHER_BLOCK).nonOpaque()
             )
     );
 

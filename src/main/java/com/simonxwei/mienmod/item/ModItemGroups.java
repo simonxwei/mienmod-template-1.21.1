@@ -31,9 +31,23 @@ public class ModItemGroups {
                         entries.add(ModItems.STRAWBERRY);
                         entries.add(ModItems.ANTHRACITE);
                         entries.add(ModItems.PLATE);
+                        entries.add(ModItems.FIRE_ETHER);
 
 //                        高级物品
                         entries.add(ModItems.PROSPECTOR);
+
+//                        工具
+                        entries.add(ModItems.FIRE_ETHER_SWORD);
+                        entries.add(ModItems.FIRE_ETHER_SHOVEL);
+                        entries.add(ModItems.FIRE_ETHER_PICKAXE);
+                        entries.add(ModItems.FIRE_ETHER_AXE);
+                        entries.add(ModItems.FIRE_ETHER_HOE);
+
+//                        盔甲
+                        entries.add(ModItems.ICE_ETHER_HELMET);
+                        entries.add(ModItems.ICE_ETHER_CHESTPLATE);
+                        entries.add(ModItems.ICE_ETHER_LEGGINGS);
+                        entries.add(ModItems.ICE_ETHER_BOOTS);
 
 //                        方块物品
                         entries.add(ModBlocks.ICE_ETHER_BLOCK);

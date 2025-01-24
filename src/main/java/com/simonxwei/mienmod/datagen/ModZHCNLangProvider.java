@@ -25,9 +25,23 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.STRAWBERRY, "草莓");
         translationBuilder.add(ModItems.ANTHRACITE, "无烟煤");
         translationBuilder.add(ModItems.PLATE, "盘子");
+        translationBuilder.add(ModItems.FIRE_ETHER, "火之以太");
 
 //        高级物品翻译
         translationBuilder.add((ModItems.PROSPECTOR), "探矿器");
+
+//        工具翻译
+        translationBuilder.add(ModItems.FIRE_ETHER_SWORD, "火之以太剑");
+        translationBuilder.add(ModItems.FIRE_ETHER_SHOVEL, "火之以太铲");
+        translationBuilder.add(ModItems.FIRE_ETHER_PICKAXE, "火之以太镐");
+        translationBuilder.add(ModItems.FIRE_ETHER_AXE, "火之以太斧");
+        translationBuilder.add(ModItems.FIRE_ETHER_HOE, "火之以太锄");
+
+//        盔甲翻译
+        translationBuilder.add(ModItems.ICE_ETHER_HELMET, "冰之以太头盔");
+        translationBuilder.add(ModItems.ICE_ETHER_CHESTPLATE, "冰之以太胸甲");
+        translationBuilder.add(ModItems.ICE_ETHER_LEGGINGS, "冰之以太护腿");
+        translationBuilder.add(ModItems.ICE_ETHER_BOOTS, "冰之以太靴子");
 
 //        方块物品翻译
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "冰之以太块");
