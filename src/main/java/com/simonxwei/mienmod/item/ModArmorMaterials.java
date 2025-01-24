@@ -18,6 +18,7 @@ import java.util.EnumMap;
 import java.util.List;
 import java.util.function.Supplier;
 
+@SuppressWarnings("unchecked")
 public class ModArmorMaterials {
 //    自制盔甲
     public static final RegistryEntry<ArmorMaterial> ICE_ETHER = register(
@@ -37,6 +38,7 @@ public class ModArmorMaterials {
 
 //    复制源代码ArmorMaterials的注册方法
 //    普通盔甲也调用了皮革的注册方法，因此直接复制即可
+//    普通盔甲的注册方法
     private static RegistryEntry<ArmorMaterial> register(
             String id,
             EnumMap<ArmorItem.Type, Integer> defense,
@@ -49,6 +51,7 @@ public class ModArmorMaterials {
         return register(id, defense, enchantability, equipSound, toughness, knockbackResistance, repairIngredient, list);
     }
 
+//    带有Layer（类皮革）注册方法
     private static RegistryEntry<ArmorMaterial> register(
             String id,
             EnumMap<ArmorItem.Type, Integer> defense,
@@ -67,7 +70,7 @@ public class ModArmorMaterials {
 
         return Registry.registerReference(
                 Registries.ARMOR_MATERIAL,
-                Identifier.ofVanilla(id),
+                Identifier.of(MienMod.MOD_ID, id),
                 new ArmorMaterial(
                         enumMap,
                         enchantability,

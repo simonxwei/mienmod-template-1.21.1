@@ -1,6 +1,7 @@
 package com.simonxwei.mienmod.item;
 
 import com.simonxwei.mienmod.MienMod;
+import com.simonxwei.mienmod.item.custom.ModArmorItem;
 import com.simonxwei.mienmod.item.custom.Prospector;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -115,9 +116,10 @@ public class ModItems {
     );
 
 //    盔甲
+//    四个部位只要一个部位的ArmorItem改为ModArmorItem，则在ModArmorItem的运行下将获得盔甲效果（因为该代码遍历了所穿戴盔甲的全部部位）
     public static final Item ICE_ETHER_HELMET = registerItems(
             "ice_ether_helmet",
-            new ArmorItem(
+            new ModArmorItem(
                     ModArmorMaterials.ICE_ETHER,
                     ArmorItem.Type.HELMET,
                     new Item.Settings().fireproof().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(37))
