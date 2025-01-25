@@ -26,6 +26,7 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.ANTHRACITE, "无烟煤");
         translationBuilder.add(ModItems.PLATE, "盘子");
         translationBuilder.add(ModItems.FIRE_ETHER, "火之以太");
+        translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "草莓种子");
 
 //        高级物品翻译
         translationBuilder.add((ModItems.PROSPECTOR), "探矿器");
@@ -42,6 +43,9 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.ICE_ETHER_CHESTPLATE, "冰之以太胸甲");
         translationBuilder.add(ModItems.ICE_ETHER_LEGGINGS, "冰之以太护腿");
         translationBuilder.add(ModItems.ICE_ETHER_BOOTS, "冰之以太靴子");
+
+//        头饰翻译
+        translationBuilder.add(ModItems.HAT, "帽子");
 
 //        方块物品翻译
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "冰之以太块");

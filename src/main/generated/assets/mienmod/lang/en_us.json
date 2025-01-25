@@ -20,6 +20,7 @@
   "item.mienmod.fire_ether_pickaxe": "Fire Ether Pickaxe",
   "item.mienmod.fire_ether_shovel": "Fire Ether Shovel",
   "item.mienmod.fire_ether_sword": "Fire Ether Sword",
+  "item.mienmod.hat": "hat",
   "item.mienmod.ice_ether": "Ice Ether",
   "item.mienmod.ice_ether_boots": "Ice Ether Boots",
   "item.mienmod.ice_ether_chestplate": "Ice Ether Chestplate",
@@ -30,5 +31,6 @@
   "item.mienmod.prospector.shift_tooltip": "A tool used to prospect ores",
   "item.mienmod.prospector.tooltip": "Hold §6SHIFT§r for more information",
   "item.mienmod.raw_ice_ether": "Raw Ice Ether",
-  "item.mienmod.strawberry": "Strawberry"
+  "item.mienmod.strawberry": "Strawberry",
+  "item.mienmod.strawberry_seeds": "strawberry_seed"
 }

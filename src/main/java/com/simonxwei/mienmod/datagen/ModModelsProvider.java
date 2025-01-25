@@ -10,6 +10,7 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.state.property.Properties;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -19,15 +20,25 @@ public class ModModelsProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 //        添加方块模型及状态
-//        涉及方块族的方块，要用方块族数据生成代码改写
+//        涉及方块族的方块，要用方块族数据生成代码改写，如建筑方块的原料方块，相当于把这里注册的步骤转移到BlockFamilies中
 //        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_BLOCK);
         ModBlockFamilies.getFamilies()
                         .filter(BlockFamily::shouldGenerateModels)
                                 .forEach(blockFamily -> blockStateModelGenerator
                                         .registerCubeAllModelTexturePool(blockFamily.getBaseBlock())
                                         .family(blockFamily));
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ICE_ETHER_BLOCK);
+
+//        作物方块代码也不同
+//        参考源代码BlockStateModelGenerator
+//        但是Crop型是井字形模型，若需要其他构型即多方快构型，可参考如甜浆果、树苗的注册方式，关键在于TextureMap
+        blockStateModelGenerator.registerCrop(
+                ModBlocks.STRAWBERRY_CROP,
+                Properties.AGE_5,
+                0, 1, 2, 3, 4, 5
+        );
     }
 
     @Override

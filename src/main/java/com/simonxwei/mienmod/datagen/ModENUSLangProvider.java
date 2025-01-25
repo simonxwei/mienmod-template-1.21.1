@@ -27,6 +27,7 @@ public class ModENUSLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.ANTHRACITE, "Anthracite");
         translationBuilder.add(ModItems.PLATE, "Plate");
         translationBuilder.add(ModItems.FIRE_ETHER, "Fire Ether");
+        translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "strawberry_seed");
 
 //        高级物品翻译
         translationBuilder.add((ModItems.PROSPECTOR), "Prospector");
@@ -43,6 +44,9 @@ public class ModENUSLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.ICE_ETHER_CHESTPLATE, "Ice Ether Chestplate");
         translationBuilder.add(ModItems.ICE_ETHER_LEGGINGS, "Ice Ether Leggings");
         translationBuilder.add(ModItems.ICE_ETHER_BOOTS, "Ice Ether Boots");
+
+//        头饰翻译
+        translationBuilder.add(ModItems.HAT, "hat");
 
 //        方块物品翻译
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "Ice Ether Block");

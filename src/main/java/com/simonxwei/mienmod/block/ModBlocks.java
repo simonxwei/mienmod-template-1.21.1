@@ -1,6 +1,7 @@
 package com.simonxwei.mienmod.block;
 
 import com.simonxwei.mienmod.MienMod;
+import com.simonxwei.mienmod.block.custom.StrawberryCropBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -85,6 +86,14 @@ public class ModBlocks {
                     BlockSetType.IRON,
                     AbstractBlock.Settings.copy(ICE_ETHER_BLOCK).nonOpaque()
             )
+    );
+
+//    作物方块
+//    因为作物不需要返回方块物品，所以按照此前注册方法重写
+    public static final Block STRAWBERRY_CROP = Registry.register(
+            Registries.BLOCK,
+            Identifier.of(MienMod.MOD_ID, "strawberry_crop"),
+            new StrawberryCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT))
     );
 
 //    注册方块物品_step1

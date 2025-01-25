@@ -2,6 +2,7 @@ package com.simonxwei.mienmod.item;
 
 import com.simonxwei.mienmod.MienMod;
 import com.simonxwei.mienmod.block.ModBlocks;
+import com.simonxwei.mienmod.item.custom.HatItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
@@ -32,6 +33,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ANTHRACITE);
                         entries.add(ModItems.PLATE);
                         entries.add(ModItems.FIRE_ETHER);
+                        entries.add(ModItems.STRAWBERRY_SEEDS);
 
 //                        高级物品
                         entries.add(ModItems.PROSPECTOR);
@@ -48,6 +50,9 @@ public class ModItemGroups {
                         entries.add(ModItems.ICE_ETHER_CHESTPLATE);
                         entries.add(ModItems.ICE_ETHER_LEGGINGS);
                         entries.add(ModItems.ICE_ETHER_BOOTS);
+
+//                        头饰
+                        entries.add(ModItems.HAT);
 
 //                        方块物品
                         entries.add(ModBlocks.ICE_ETHER_BLOCK);

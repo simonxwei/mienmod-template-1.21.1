@@ -2,6 +2,7 @@ package com.simonxwei.mienmod.mixin;
 
 import com.simonxwei.mienmod.block.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.RenderLayers;
 import org.spongepowered.asm.mixin.Final;
@@ -23,7 +24,11 @@ public class RenderLayersMixin {
 
 //    添加的代码
     private static void onBlockInit(CallbackInfo ci) {
+//        透明家具
         BLOCKS.put(ModBlocks.ICE_ETHER_DOOR, RenderLayer.getCutout());
         BLOCKS.put(ModBlocks.ICE_ETHER_TRAPDOOR, RenderLayer.getCutout());
+
+//        作物方块
+        BLOCKS.put(ModBlocks.STRAWBERRY_CROP, RenderLayer.getCutout());
     }
 }

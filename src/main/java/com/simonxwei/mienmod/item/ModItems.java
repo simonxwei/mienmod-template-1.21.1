@@ -1,6 +1,8 @@
 package com.simonxwei.mienmod.item;
 
 import com.simonxwei.mienmod.MienMod;
+import com.simonxwei.mienmod.block.ModBlocks;
+import com.simonxwei.mienmod.item.custom.HatItem;
 import com.simonxwei.mienmod.item.custom.ModArmorItem;
 import com.simonxwei.mienmod.item.custom.Prospector;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
@@ -31,6 +33,12 @@ public class ModItems {
             "anthracite",
             new Item(new Item.Settings())
     );
+//    普通物品_作物种子
+    public static final Item STRAWBERRY_SEEDS = registerItems(
+            "strawberry_seeds",
+            new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP, new Item.Settings())
+    );
+
 //    2D -> 3D渲染物品
     public static final Item PLATE = registerItems(
             "plate",
@@ -148,6 +156,15 @@ public class ModItems {
                     ArmorItem.Type.BOOTS,
                     new Item.Settings().fireproof().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(37))
             )
+    );
+
+//    头饰
+    public static final Item HAT = registerItems(
+            "hat",
+        new HatItem(
+                HatItem.Type.HAT,
+                new Item.Settings().maxDamage(HatItem.Type.HAT.getMaxDamage(5))
+        )
     );
 
 //    方块物品
