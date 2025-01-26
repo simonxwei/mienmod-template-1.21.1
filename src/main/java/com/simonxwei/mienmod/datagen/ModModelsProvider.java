@@ -88,5 +88,8 @@ public class ModModelsProvider extends FabricModelProvider {
 
 //        高级物品
         itemModelGenerator.register(ModItems.PROSPECTOR, Models.GENERATED);
+
+//        音乐唱片，注意独立唱片模型
+        itemModelGenerator.register(ModItems.TEST_MUSIC_DISC, Models.TEMPLATE_MUSIC_DISC);
     }
 }

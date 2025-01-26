@@ -34,5 +34,11 @@
     "sounds": [
       "mienmod:block_fall"
     ]
+  },
+
+  "music_disc.test": {
+    "sounds": [
+      "mienmod:test"
+    ]
   }
 }

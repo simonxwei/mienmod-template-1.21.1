@@ -5,6 +5,7 @@ import com.simonxwei.mienmod.block.ModBlocks;
 import com.simonxwei.mienmod.item.custom.HatItem;
 import com.simonxwei.mienmod.item.custom.ModArmorItem;
 import com.simonxwei.mienmod.item.custom.Prospector;
+import com.simonxwei.mienmod.sound.ModJukeBoxSongs;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -13,6 +14,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 public class ModItems {
 //    普通物品
@@ -41,6 +43,11 @@ public class ModItems {
     public static final Item CORN_SEEDS = registerItems(
             "corn_seeds",
             new AliasedBlockItem(ModBlocks.CORN_CROP, new Item.Settings())
+    );
+//    普通物品_唱片
+    public static final Item TEST_MUSIC_DISC = registerItems(
+            "test_music_disc",
+            new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModJukeBoxSongs.TEST))
     );
 
 //    2D -> 3D渲染物品

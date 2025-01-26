@@ -29,6 +29,7 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.FIRE_ETHER, "火之以太");
         translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "草莓种子");
         translationBuilder.add(ModItems.CORN_SEEDS, "玉米种子");
+        translationBuilder.add(ModItems.TEST_MUSIC_DISC, "测试音乐唱片");
 
 //        高级物品翻译
         translationBuilder.add((ModItems.PROSPECTOR), "探矿器");
@@ -66,16 +67,18 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
 //        提示信息翻译
         translationBuilder.add("item.mienmod.prospector.shift_tooltip", "用于探矿的工具");
         translationBuilder.add("item.mienmod.prospector.tooltip", "按住§6SHIFT§r键查看更多信息");
+        translationBuilder.add("item.mienmod.test.desc", "测试");
 
 //        实体信息翻译
         translationBuilder.add("entity.minecraft.villager.ice_ether_master", "冰以太大师");
 
-//        音乐信息翻译
+//        播放音乐信息翻译
         translationBuilder.add("sounds.mienmod.prospector_found_ore", "探矿者发现的矿石");
         translationBuilder.add("sounds.mienmod.block_break", "方块破碎");
         translationBuilder.add("sounds.mienmod.block_step", "方块踩踏");
         translationBuilder.add("sounds.mienmod.block_place", "方块放置");
         translationBuilder.add("sounds.mienmod.block_hit", "方块击打");
         translationBuilder.add("sounds.mienmod.block_fall", "方块下落");
+        translationBuilder.add("jukebox_song.mienmod.test", "测试");
     }
 }

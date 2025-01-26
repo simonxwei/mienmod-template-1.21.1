@@ -32,5 +32,9 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
                         ModItems.ICE_ETHER_LEGGINGS,
                         ModItems.ICE_ETHER_BOOTS
                 );
+
+//        苦力怕掉落唱片
+        getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
+                .add(ModItems.TEST_MUSIC_DISC);
     }
 }
