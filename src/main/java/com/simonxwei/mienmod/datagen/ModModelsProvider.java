@@ -2,12 +2,13 @@ package com.simonxwei.mienmod.datagen;
 
 import com.simonxwei.mienmod.block.ModBlockFamilies;
 import com.simonxwei.mienmod.block.ModBlocks;
+import com.simonxwei.mienmod.block.custom.CornCropBlock;
+import com.simonxwei.mienmod.item.ModFoodComponents;
 import com.simonxwei.mienmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.client.*;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.state.property.Properties;
@@ -33,11 +34,29 @@ public class ModModelsProvider extends FabricModelProvider {
 
 //        作物方块代码也不同
 //        参考源代码BlockStateModelGenerator
-//        但是Crop型是井字形模型，若需要其他构型即多方快构型，可参考如甜浆果、树苗的注册方式，关键在于TextureMap
+//        但是Crop型是井字形模型，若需要其他构型即多方块构型，可参考如甜浆果、树苗的注册方式，关键在于TextureMap
         blockStateModelGenerator.registerCrop(
                 ModBlocks.STRAWBERRY_CROP,
                 Properties.AGE_5,
                 0, 1, 2, 3, 4, 5
+        );
+
+//        玉米种子引用的甜浆果源代码，需要额外设定物品模型，而草莓种子引用的小麦模型不需要设定物品模型
+        blockStateModelGenerator.blockStateCollector.accept(
+                VariantsBlockStateSupplier.create(ModBlocks.CORN_CROP)
+                        .coordinate(BlockStateVariantMap.create(CornCropBlock.AGE).register(
+                                        (stage) -> BlockStateVariant.create().put(
+                                                VariantSettings.MODEL,
+                                                blockStateModelGenerator.createSubModel(
+                                                        ModBlocks.CORN_CROP,
+                                                        "_stage" + stage,
+                                                        Models.CROSS,
+//                                                        十字交叉型作物方块
+                                                        TextureMap::cross
+                                                )
+                                        )
+                                )
+                        )
         );
     }
 
@@ -48,6 +67,8 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_ICE_ETHER, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHEESE, Models.GENERATED);
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORN_SEEDS, Models.GENERATED);
         itemModelGenerator.register(ModItems.ANTHRACITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.FIRE_ETHER, Models.GENERATED);

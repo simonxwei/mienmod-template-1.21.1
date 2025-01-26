@@ -4,8 +4,12 @@ import com.simonxwei.mienmod.block.ModBlocks;
 import com.simonxwei.mienmod.item.ModItemGroups;
 import com.simonxwei.mienmod.item.ModItems;
 import com.simonxwei.mienmod.mixin.GrassColorsMixin;
+import com.simonxwei.mienmod.sound.ModSoundEvents;
 import com.simonxwei.mienmod.tag.ModBlockTags;
 import com.simonxwei.mienmod.tag.ModItemTags;
+import com.simonxwei.mienmod.util.ModCustomTrades;
+import com.simonxwei.mienmod.util.ModLootTableModifiers;
+import com.simonxwei.mienmod.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -27,11 +31,21 @@ public class MienMod implements ModInitializer {
 		// Proceed with mild caution.
 
 //		调用方法
+//		方块与物品
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
-		ModBlocks.registerBlocks();
+		ModBlocks.registerModBlocks();
+//		标签
 		ModItemTags.registerModItemTags();
 		ModBlockTags.registerModBlockTags();
+//		战利品
+		ModLootTableModifiers.modifyLootTable();
+//		交易
+		ModCustomTrades.registerModCustomTrades();
+//		村民，因为代码连带工作站，故工作站可以不写初始化
+		ModVillagers.registerModVillagers();
+//		声音
+		ModSoundEvents.registerModSoundEvents();
 
 ////		通过Mixin，获取草方块的颜色
 //		int[] colorMap = GrassColorsMixin.getColorMap();

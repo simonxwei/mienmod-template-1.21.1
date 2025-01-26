@@ -10,6 +10,9 @@ public class ModFoodComponents {
     public static final FoodComponent CHEESE = new FoodComponent.Builder()
             .nutrition(8).saturationModifier(0.8f)
             .build();
+    public static final FoodComponent CORN = new FoodComponent.Builder()
+            .nutrition(3).saturationModifier(0.4f)
+            .build();
 
 //    添加有效果的食物
     public static final FoodComponent STRAWBERRY = new FoodComponent.Builder()

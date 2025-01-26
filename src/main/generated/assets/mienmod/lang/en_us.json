@@ -12,8 +12,11 @@
   "block.mienmod.ice_ether_trapdoor": "Ice Ether Trapdoor",
   "block.mienmod.ice_ether_wall": "Ice Ether Wall",
   "block.mienmod.raw_ice_ether_block": "Raw Ice Ether Block",
+  "entity.minecraft.villager.ice_ether_master": "Ice Ether Master",
   "item.mienmod.anthracite": "Anthracite",
   "item.mienmod.cheese": "Cheese",
+  "item.mienmod.corn": "corn",
+  "item.mienmod.corn_seeds": "corn_seeds",
   "item.mienmod.fire_ether": "Fire Ether",
   "item.mienmod.fire_ether_axe": "Fire Ether Axe",
   "item.mienmod.fire_ether_hoe": "Fire Ether Hoe",
@@ -32,5 +35,11 @@
   "item.mienmod.prospector.tooltip": "Hold §6SHIFT§r for more information",
   "item.mienmod.raw_ice_ether": "Raw Ice Ether",
   "item.mienmod.strawberry": "Strawberry",
-  "item.mienmod.strawberry_seeds": "strawberry_seed"
+  "item.mienmod.strawberry_seeds": "strawberry_seed",
+  "sounds.mienmod.block_break": "block_break",
+  "sounds.mienmod.block_fall": "block_fall",
+  "sounds.mienmod.block_hit": "block_hit",
+  "sounds.mienmod.block_place": "block_place",
+  "sounds.mienmod.block_step": "block_step",
+  "sounds.mienmod.prospector_found_ore": "prospector_found_ore"
 }

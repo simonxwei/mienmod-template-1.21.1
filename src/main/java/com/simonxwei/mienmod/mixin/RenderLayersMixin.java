@@ -30,5 +30,6 @@ public class RenderLayersMixin {
 
 //        作物方块
         BLOCKS.put(ModBlocks.STRAWBERRY_CROP, RenderLayer.getCutout());
+        BLOCKS.put(ModBlocks.CORN_CROP, RenderLayer.getCutout());
     }
 }

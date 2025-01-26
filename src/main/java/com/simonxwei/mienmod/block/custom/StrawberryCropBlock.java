@@ -16,18 +16,21 @@ import net.minecraft.world.BlockView;
 public class StrawberryCropBlock extends CropBlock {
 //    根据源代码CropBlock设定状态值
     public static final int MAX_AGE = 5;
+//    定义作物的生长阶段属性
     public static final IntProperty AGE = Properties.AGE_5;
 
     public StrawberryCropBlock(Settings settings) {
         super(settings);
     }
 
+//    重写获取最大生长阶段的方法
     @Override
     public int getMaxAge() {
         return MAX_AGE;
     }
 
 //    根据源代码CropBlock复制获取状态属性，因为源代码是public所以不需要额外修改
+//    重写获取生长阶段属性的方法
     protected IntProperty getAgeProperty() {
         return AGE;
     }

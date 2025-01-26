@@ -30,10 +30,12 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_ICE_ETHER);
                         entries.add(ModItems.CHEESE);
                         entries.add(ModItems.STRAWBERRY);
+                        entries.add(ModItems.CORN);
                         entries.add(ModItems.ANTHRACITE);
                         entries.add(ModItems.PLATE);
                         entries.add(ModItems.FIRE_ETHER);
                         entries.add(ModItems.STRAWBERRY_SEEDS);
+                        entries.add(ModItems.CORN_SEEDS);
 
 //                        高级物品
                         entries.add(ModItems.PROSPECTOR);

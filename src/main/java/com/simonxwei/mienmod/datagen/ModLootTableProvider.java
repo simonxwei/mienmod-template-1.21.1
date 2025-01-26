@@ -1,6 +1,7 @@
 package com.simonxwei.mienmod.datagen;
 
 import com.simonxwei.mienmod.block.ModBlocks;
+import com.simonxwei.mienmod.block.custom.CornCropBlock;
 import com.simonxwei.mienmod.block.custom.StrawberryCropBlock;
 import com.simonxwei.mienmod.item.ModItemGroups;
 import com.simonxwei.mienmod.item.ModItems;
@@ -54,9 +55,22 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 ModBlocks.STRAWBERRY_CROP,
                 cropDrops(
                         ModBlocks.STRAWBERRY_CROP,
-                        ModItems.STRAWBERRY_SEEDS,
+                        ModItems.STRAWBERRY,
                         ModItems.STRAWBERRY_SEEDS,
                         builder2
+                )
+        );
+
+        LootCondition.Builder builder3 = BlockStatePropertyLootCondition
+                .builder(ModBlocks.CORN_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(CornCropBlock.AGE, 8));
+        addDrop(
+                ModBlocks.CORN_CROP,
+                cropDrops(
+                        ModBlocks.CORN_CROP,
+                        ModItems.CORN,
+                        ModItems.CORN_SEEDS,
+                        builder3
                 )
         );
     }

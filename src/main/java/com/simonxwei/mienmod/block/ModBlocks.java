@@ -1,7 +1,9 @@
 package com.simonxwei.mienmod.block;
 
 import com.simonxwei.mienmod.MienMod;
+import com.simonxwei.mienmod.block.custom.CornCropBlock;
 import com.simonxwei.mienmod.block.custom.StrawberryCropBlock;
+import com.simonxwei.mienmod.sound.ModSoundEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -15,7 +17,9 @@ public class ModBlocks {
 //    like原木采用徒手撸树即具备掉落物，则无需写.requiresTool()
     public static final Block ICE_ETHER_BLOCK = register(
             "ice_ether_block",
-            new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f))
+//            添加声音字段
+            new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)
+                    .sounds(ModSoundEvents.BLOCK_SOUND_GROUP))
     );
     public static final Block ICE_ETHER_ORE = register(
             "ice_ether_ore",
@@ -95,6 +99,11 @@ public class ModBlocks {
             Identifier.of(MienMod.MOD_ID, "strawberry_crop"),
             new StrawberryCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT))
     );
+    public static final Block CORN_CROP = Registry.register(
+            Registries.BLOCK,
+            Identifier.of(MienMod.MOD_ID, "corn_crop"),
+            new CornCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT))
+    );
 
 //    注册方块物品_step1
     public static void registerBlockItems(String id, Block block) {
@@ -120,7 +129,7 @@ public class ModBlocks {
     }
 
 //    初始化方法，在主类MienMod中调用后打印日志
-    public static void registerBlocks() {
+    public static void registerModBlocks() {
         MienMod.LOGGER.info("Registering Blocks");
     }
 }

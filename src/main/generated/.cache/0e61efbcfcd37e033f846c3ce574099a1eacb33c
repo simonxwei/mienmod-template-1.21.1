@@ -1,5 +1,6 @@
-// 1.21.1	2025-01-25T13:54:16.0345709	MienMod/Block Loot Tables
+// 1.21.1	2025-01-26T16:32:50.467048	MienMod/Block Loot Tables
 bb41ab8d8cc6dfa64ada67c265d847e7f3d361cc data\mienmod\loot_table\blocks\ice_ether_ore.json
-84048deafd05c5c748851bf2fee25283e59c13b3 data\mienmod\loot_table\blocks\strawberry_crop.json
+cc653df75281abc7ba56f1b9df8c6b27f173c4ba data\mienmod\loot_table\blocks\strawberry_crop.json
 0162ff0f5be19e9d931d63123bbd6f27f89d5a56 data\mienmod\loot_table\blocks\ice_ether_block.json
+c7c1c2c62874dbb29e20c64097d565a4554de1f2 data\mienmod\loot_table\blocks\corn_crop.json
 4a5ac237e689787cdbbbda8d0606c3c3031d982d data\mienmod\loot_table\blocks\raw_ice_ether_block.json

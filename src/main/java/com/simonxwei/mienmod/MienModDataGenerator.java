@@ -9,6 +9,7 @@ public class MienModDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
+//		有报错就按提示设置为public
 		pack.addProvider(ModBlockTagsProvider::new);
 		pack.addProvider(ModENUSLangProvider::new);
 		pack.addProvider(ModItemTagsProvider::new);
@@ -16,5 +17,6 @@ public class MienModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelsProvider::new);
 		pack.addProvider(ModRecipesProvider::new);
 		pack.addProvider(ModZHCNLangProvider::new);
+		pack.addProvider(ModPointTagProvider::new);
 	}
 }

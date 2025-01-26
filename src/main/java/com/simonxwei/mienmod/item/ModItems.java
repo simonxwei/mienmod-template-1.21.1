@@ -38,6 +38,10 @@ public class ModItems {
             "strawberry_seeds",
             new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP, new Item.Settings())
     );
+    public static final Item CORN_SEEDS = registerItems(
+            "corn_seeds",
+            new AliasedBlockItem(ModBlocks.CORN_CROP, new Item.Settings())
+    );
 
 //    2D -> 3D渲染物品
     public static final Item PLATE = registerItems(
@@ -53,6 +57,10 @@ public class ModItems {
     public static final Item STRAWBERRY = registerItems(
             "strawberry",
             new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY))
+    );
+    public static final Item CORN = registerItems(
+            "corn",
+            new Item(new Item.Settings().food(ModFoodComponents.CORN))
     );
 
 //    高级物品

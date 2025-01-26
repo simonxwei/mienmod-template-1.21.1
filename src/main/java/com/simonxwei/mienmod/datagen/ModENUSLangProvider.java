@@ -24,10 +24,12 @@ public class ModENUSLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.RAW_ICE_ETHER, "Raw Ice Ether");
         translationBuilder.add(ModItems.CHEESE, "Cheese");
         translationBuilder.add(ModItems.STRAWBERRY, "Strawberry");
+        translationBuilder.add(ModItems.CORN, "corn");
         translationBuilder.add(ModItems.ANTHRACITE, "Anthracite");
         translationBuilder.add(ModItems.PLATE, "Plate");
         translationBuilder.add(ModItems.FIRE_ETHER, "Fire Ether");
         translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "strawberry_seed");
+        translationBuilder.add(ModItems.CORN_SEEDS, "corn_seeds");
 
 //        高级物品翻译
         translationBuilder.add((ModItems.PROSPECTOR), "Prospector");
@@ -65,5 +67,16 @@ public class ModENUSLangProvider extends FabricLanguageProvider {
 //        提示信息翻译
         translationBuilder.add("item.mienmod.prospector.shift_tooltip", "A tool used to prospect ores");
         translationBuilder.add("item.mienmod.prospector.tooltip", "Hold §6SHIFT§r for more information");
+
+//        实体信息翻译
+        translationBuilder.add("entity.minecraft.villager.ice_ether_master", "Ice Ether Master");
+
+//        音乐信息翻译
+        translationBuilder.add("sounds.mienmod.prospector_found_ore", "prospector_found_ore");
+        translationBuilder.add("sounds.mienmod.block_break", "block_break");
+        translationBuilder.add("sounds.mienmod.block_step", "block_step");
+        translationBuilder.add("sounds.mienmod.block_place", "block_place");
+        translationBuilder.add("sounds.mienmod.block_hit", "block_hit");
+        translationBuilder.add("sounds.mienmod.block_fall", "block_fall");
     }
 }

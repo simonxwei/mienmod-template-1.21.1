@@ -1,0 +1,38 @@
+{
+  "prospector_found_ore": {
+    "subtitle": "sounds.mienmod.prospector_found_ore",
+    "sounds": [
+      "mienmod:prospector_found_ore"
+    ]
+  },
+  "block_break": {
+    "subtitle": "sounds.mienmod.block_break",
+    "sounds": [
+      "mienmod:block_break"
+    ]
+  },
+  "block_step": {
+    "subtitle": "sounds.mienmod.block_step",
+    "sounds": [
+      "mienmod:block_step"
+    ]
+  },
+  "block_place": {
+    "subtitle": "sounds.mienmod.block_place",
+    "sounds": [
+      "mienmod:block_place"
+    ]
+  },
+  "block_hit": {
+    "subtitle": "sounds.mienmod.block_hit",
+    "sounds": [
+      "mienmod:block_hit"
+    ]
+  },
+  "block_fall": {
+    "subtitle": "sounds.mienmod.block_fall",
+    "sounds": [
+      "mienmod:block_fall"
+    ]
+  }
+}
