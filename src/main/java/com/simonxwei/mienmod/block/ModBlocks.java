@@ -105,6 +105,13 @@ public class ModBlocks {
             new CornCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT))
     );
 
+//    流体方块
+    public static final Block OIL = Registry.register(
+            Registries.BLOCK,
+            Identifier.of(MienMod.MOD_ID, "oil"),
+            new FluidBlock(ModFluids.OIL, AbstractBlock.Settings.copy(Blocks.WATER))
+    );
+
 //    注册方块物品_step1
     public static void registerBlockItems(String id, Block block) {
         Item item = Registry.register(

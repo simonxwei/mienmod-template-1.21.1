@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-26T17:59:24.1730631	MienMod/Model Definitions
+// 1.21.1	2025-01-31T12:53:11.4611168	MienMod/Model Definitions
 8b11405337ed6dfa7a5f0f9f7a18117ed5f054c4 assets\mienmod\models\block\ice_ether_button.json
 6b5b3b0e58059e76083b0df3097e051230f05c07 assets\mienmod\models\item\ice_ether_stairs.json
 cb7126a0afa202f4d7a5d6cb9bc251689248ad1d assets\mienmod\models\block\ice_ether_stairs_inner.json
@@ -32,6 +32,7 @@ be0ce2ece30775e1c885fcb63deff98a3455f0bd assets\mienmod\blockstates\ice_ether_or
 f3050afa1733940caa67d87bae28d669bcf0f6f6 assets\mienmod\models\item\ice_ether_chestplate_gold_trim.json
 85a92bc2778989153a9bc2d2b2b62b0495164ef9 assets\mienmod\models\item\ice_ether_wall.json
 4d2b6807f864e1bb5fa32a7ed92759dda012697b assets\mienmod\models\block\corn_crop_stage5.json
+841e864b909312f9c954cd8829ca21ba6d169ba1 assets\mienmod\models\item\ice_ether_horse_armor.json
 d1c92e8328ff546a40fe952de8f9744ca494441f assets\mienmod\models\block\corn_crop_stage2.json
 ad029c145fe22d51cbcd4416bd32b7e19bbd06ad assets\mienmod\models\item\ice_ether_boots_netherite_trim.json
 25a3a5383995d23bfae987dc0aa9819cf8f93e56 assets\mienmod\models\item\ice_ether_block.json
@@ -53,6 +54,7 @@ c87608c435a62db4f930bc5c73f760d65a01f2aa assets\mienmod\models\item\ice_ether_he
 28fb111737c526c085b5a0ecedc65ae32a683a75 assets\mienmod\models\item\ice_ether_chestplate_netherite_trim.json
 479bffc932b98a7182d53fdddff14eb6916831f6 assets\mienmod\models\block\corn_crop_stage7.json
 b4665c2a91b4f83d960e815ffd35401dc078575a assets\mienmod\models\item\ice_ether_leggings_iron_trim.json
+994094c6e70203021987712c46f2d91826f4781d assets\mienmod\models\item\oil_bucket.json
 318c695ed1282ca3f7ae677680c9224a9ae82521 assets\mienmod\models\block\ice_ether_trapdoor_open.json
 9e4470f314e570bfa9a24f1c0776d9dede8e65fe assets\mienmod\models\item\ice_ether_helmet_iron_trim.json
 4d4119d062a0e093f154e9c3b270091f3e45e832 assets\mienmod\models\block\ice_ether_fence_gate.json
@@ -90,6 +92,7 @@ a3841e464344fb9e6830e0160545ccea0595d6d2 assets\mienmod\models\item\ice_ether_bu
 638eca54e78143a5c3a82fd77a0cb83c0fa28af0 assets\mienmod\models\item\cheese.json
 c791ef7d7e5a4c80c3978c0757bbd79490e503bb assets\mienmod\models\block\ice_ether_door_top_right.json
 b31bd7619ac1c5fbbbab74b49dd6702c5e1e8649 assets\mienmod\models\item\anthracite.json
+fc53a33c1b195b633134f85527d15f3b950c7e5f assets\mienmod\blockstates\oil.json
 69ecfacd2aa378ba8cdfc8fa0515f3ab204a712c assets\mienmod\models\block\ice_ether_fence_inventory.json
 cd689e3ea97d6fa9b9f51e9cd63ea96aa7f9c57c assets\mienmod\models\block\ice_ether_button_inventory.json
 2906aaae9af1c06c83371d50613f5f2e74963f4a assets\mienmod\models\block\ice_ether_wall_side_tall.json
@@ -124,8 +127,8 @@ ec2a3651408f801d023337952ba9fd2700f4acd2 assets\mienmod\models\block\corn_crop_s
 50b9a89be98cc6d71634ce1e1f1852931c566f49 assets\mienmod\models\item\ice_ether_helmet_redstone_trim.json
 cf422ac97d9bd76066a4e16f83ec82178cf6c87a assets\mienmod\models\item\ice_ether_leggings_lapis_trim.json
 2e67df699c5d37a6dcab8663175d0be8ebd4ad39 assets\mienmod\models\item\ice_ether_boots_redstone_trim.json
-c1b1bcaa3e3d24e0c8ffd49a4ed7623192b9b256 assets\mienmod\models\item\ice_ether_leggings_copper_trim.json
 03c4eb965564304a2f09e4243836311f3ddd5768 assets\mienmod\models\block\ice_ether_fence_gate_wall.json
+c1b1bcaa3e3d24e0c8ffd49a4ed7623192b9b256 assets\mienmod\models\item\ice_ether_leggings_copper_trim.json
 3407daf784bbf94970c492283955f82708351d5e assets\mienmod\models\block\corn_crop_stage3.json
 14c4df23c5c60c1af287dd958f036b045f45daaf assets\mienmod\blockstates\ice_ether_stairs.json
 ffbcfb026c6e4bc9e3ce9727ca0ad2d69a2872fa assets\mienmod\models\item\ice_ether_helmet_quartz_trim.json

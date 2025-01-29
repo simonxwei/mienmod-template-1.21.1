@@ -30,6 +30,8 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "草莓种子");
         translationBuilder.add(ModItems.CORN_SEEDS, "玉米种子");
         translationBuilder.add(ModItems.TEST_MUSIC_DISC, "测试音乐唱片");
+        translationBuilder.add(ModItems.OIL_BUCKET, "油桶");
+        translationBuilder.add(ModItems.ICE_ETHER_HORSE_ARMOR, "冰以太马甲");
 
 //        高级物品翻译
         translationBuilder.add((ModItems.PROSPECTOR), "探矿器");

@@ -31,6 +31,8 @@ public class ModENUSLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "Strawberry Seed");
         translationBuilder.add(ModItems.CORN_SEEDS, "Corn Seeds");
         translationBuilder.add(ModItems.TEST_MUSIC_DISC, "Test Music Disc");
+        translationBuilder.add(ModItems.OIL_BUCKET, "Oil Bucket");
+        translationBuilder.add(ModItems.ICE_ETHER_HORSE_ARMOR, "Ice Ether Horse Armor");
 
 //        高级物品翻译
         translationBuilder.add((ModItems.PROSPECTOR), "Prospector");

@@ -1,9 +1,9 @@
-// 1.21.1	2025-01-26T17:59:24.179502	MienMod/Tags for minecraft:block
+// 1.21.1	2025-01-31T12:53:11.4641063	MienMod/Tags for minecraft:block
 f0fcb5cec48b68d081a15725ad06107e44c81765 data\minecraft\tags\block\buttons.json
 1f4642315d35eab6ab62e0b38fe8756021d36f59 data\minecraft\tags\block\walls.json
 a09ccb28820f83f501e96a8b8d6b68a02ec30296 data\minecraft\tags\block\needs_stone_tool.json
 22c6b699ebd8c1fdd73581f2d3043c49af574468 data\minecraft\tags\block\fence_gates.json
 980ec7b6a87d5950f14415fd049e470d0e5adc6f data\minecraft\tags\block\mineable\pickaxe.json
 c5b84b447332ead5c734c82d9345e7018f9651ac data\minecraft\tags\block\needs_iron_tool.json
-74891117beda66980353c352a7570c50f23e9f78 data\mienmod\tags\block\ore_list.json
 5c3fe09687047e0ca0cd18e81e43256841f5dba9 data\minecraft\tags\block\fences.json
+74891117beda66980353c352a7570c50f23e9f78 data\mienmod\tags\block\ore_list.json

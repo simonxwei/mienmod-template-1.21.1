@@ -2,6 +2,7 @@ package com.simonxwei.mienmod.item;
 
 import com.simonxwei.mienmod.MienMod;
 import com.simonxwei.mienmod.block.ModBlocks;
+import com.simonxwei.mienmod.block.ModFluids;
 import com.simonxwei.mienmod.item.custom.HatItem;
 import com.simonxwei.mienmod.item.custom.ModArmorItem;
 import com.simonxwei.mienmod.item.custom.Prospector;
@@ -48,6 +49,25 @@ public class ModItems {
     public static final Item TEST_MUSIC_DISC = registerItems(
             "test_music_disc",
             new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModJukeBoxSongs.TEST))
+    );
+//    普通物品_流体
+    public static final Item OIL_BUCKET = registerItems(
+            "oil_bucket",
+            new BucketItem(
+                    ModFluids.OIL,
+//                    返回空桶(配方剩余物)，并且最大堆叠数为1
+                    new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)
+            )
+    );
+//    普通物品_马凯
+    public static final Item ICE_ETHER_HORSE_ARMOR = registerItems(
+            "ice_ether_horse_armor",
+            new AnimalArmorItem(
+                    ModArmorMaterials.ICE_ETHER,
+                    AnimalArmorItem.Type.EQUESTRIAN,
+                    false,
+                    new Item.Settings().maxCount(1)
+            )
     );
 
 //    2D -> 3D渲染物品

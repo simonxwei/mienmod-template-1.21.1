@@ -36,8 +36,9 @@ public class ModItemGroups {
                         entries.add(ModItems.FIRE_ETHER);
                         entries.add(ModItems.STRAWBERRY_SEEDS);
                         entries.add(ModItems.CORN_SEEDS);
-                        entries.add(ModItems.TEST_MUSIC_DISC
-                        );
+                        entries.add(ModItems.TEST_MUSIC_DISC);
+                        entries.add(ModItems.OIL_BUCKET);
+                        entries.add(ModItems.ICE_ETHER_HORSE_ARMOR);
 
 //                        高级物品
                         entries.add(ModItems.PROSPECTOR);

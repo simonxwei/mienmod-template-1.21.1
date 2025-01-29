@@ -58,6 +58,9 @@ public class ModModelsProvider extends FabricModelProvider {
                                 )
                         )
         );
+
+//        流体仅需获得最简单的方块状态即可，不产生模型文件，故模型文件要单独设置
+        blockStateModelGenerator.registerSimpleState(ModBlocks.OIL);
     }
 
     @Override
@@ -72,6 +75,8 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ANTHRACITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.FIRE_ETHER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OIL_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ICE_ETHER_HORSE_ARMOR, Models.GENERATED);
 
 //        工具，注意手持模型HANDHELD
         itemModelGenerator.register(ModItems.FIRE_ETHER_SWORD, Models.HANDHELD);
