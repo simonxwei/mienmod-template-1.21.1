@@ -1,10 +1,13 @@
 package com.simonxwei.mienmod.block;
 
 import com.simonxwei.mienmod.MienMod;
+import com.simonxwei.mienmod.block.custom.BoxBlock;
 import com.simonxwei.mienmod.block.custom.CornCropBlock;
 import com.simonxwei.mienmod.block.custom.StrawberryCropBlock;
+import com.simonxwei.mienmod.entity.ModBlockEntities;
 import com.simonxwei.mienmod.sound.ModSoundEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -110,6 +113,16 @@ public class ModBlocks {
             Registries.BLOCK,
             Identifier.of(MienMod.MOD_ID, "oil"),
             new FluidBlock(ModFluids.OIL, AbstractBlock.Settings.copy(Blocks.WATER))
+    );
+
+//    方块实体
+    public static final Block BOX = register(
+            "box",
+//            如果BoxBlock标红，说明要将对应类改为public
+            new BoxBlock(
+                    AbstractBlock.Settings.copy(Blocks.CHEST),
+                    () -> ModBlockEntities.BOX
+            )
     );
 
 //    注册方块物品_step1

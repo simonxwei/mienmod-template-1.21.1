@@ -61,6 +61,8 @@ public class ModModelsProvider extends FabricModelProvider {
 
 //        流体仅需获得最简单的方块状态即可，不产生模型文件，故模型文件要单独设置
         blockStateModelGenerator.registerSimpleState(ModBlocks.OIL);
+//        方块实体和流体类似，因为已经自制模型文件，故仅需设置方块状态
+        blockStateModelGenerator.registerSimpleState(ModBlocks.BOX);
     }
 
     @Override

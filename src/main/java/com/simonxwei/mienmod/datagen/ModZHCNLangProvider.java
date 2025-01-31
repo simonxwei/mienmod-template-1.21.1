@@ -65,6 +65,7 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ICE_ETHER_WALL, "冰之以太墙");
         translationBuilder.add(ModBlocks.ICE_ETHER_DOOR, "冰之以太门");
         translationBuilder.add(ModBlocks.ICE_ETHER_TRAPDOOR, "冰之以太活板门");
+        translationBuilder.add(ModBlocks.BOX, "箱子");
 
 //        提示信息翻译
         translationBuilder.add("item.mienmod.prospector.shift_tooltip", "用于探矿的工具");
@@ -73,6 +74,7 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
 
 //        实体信息翻译
         translationBuilder.add("entity.minecraft.villager.ice_ether_master", "冰以太大师");
+        translationBuilder.add("container.box", "箱子");
 
 //        播放音乐信息翻译
         translationBuilder.add("sounds.mienmod.prospector_found_ore", "探矿者发现的矿石");

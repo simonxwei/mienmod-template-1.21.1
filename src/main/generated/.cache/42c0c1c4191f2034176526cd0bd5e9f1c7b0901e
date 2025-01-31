@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-31T12:53:11.4611168	MienMod/Model Definitions
+// 1.21.1	2025-01-31T14:30:09.5856645	MienMod/Model Definitions
 8b11405337ed6dfa7a5f0f9f7a18117ed5f054c4 assets\mienmod\models\block\ice_ether_button.json
 6b5b3b0e58059e76083b0df3097e051230f05c07 assets\mienmod\models\item\ice_ether_stairs.json
 cb7126a0afa202f4d7a5d6cb9bc251689248ad1d assets\mienmod\models\block\ice_ether_stairs_inner.json
@@ -21,6 +21,7 @@ be026f74ac9d3863b62e49c48a37072fd93a1855 assets\mienmod\models\block\ice_ether_f
 57d570f5bbfad420e64f7e169bb7cac0497f0a17 assets\mienmod\models\block\ice_ether_door_top_right_open.json
 120fcc7a60311bc660bed7104d17323c137fd14f assets\mienmod\models\block\ice_ether_door_bottom_left_open.json
 eab3e5b8569740bd14362ec5e0ea311109b41d30 assets\mienmod\models\item\raw_ice_ether_block.json
+90f978e2f35a53687e0fca487a2aa89d2efd2ca2 assets\mienmod\models\item\box.json
 df7cfd8a9fe6a83267b38d2972d8ed05d7087032 assets\mienmod\models\block\strawberry_crop_stage3.json
 d09d2b4507e50ba2c6fde762a99d058a609217fb assets\mienmod\models\item\fire_ether_sword.json
 0bf50ff37108f40a04d31e46d8d6c1b702c12f18 assets\mienmod\models\block\strawberry_crop_stage0.json
@@ -96,6 +97,7 @@ fc53a33c1b195b633134f85527d15f3b950c7e5f assets\mienmod\blockstates\oil.json
 69ecfacd2aa378ba8cdfc8fa0515f3ab204a712c assets\mienmod\models\block\ice_ether_fence_inventory.json
 cd689e3ea97d6fa9b9f51e9cd63ea96aa7f9c57c assets\mienmod\models\block\ice_ether_button_inventory.json
 2906aaae9af1c06c83371d50613f5f2e74963f4a assets\mienmod\models\block\ice_ether_wall_side_tall.json
+5644775ee8cca280e8e1ac46bc06efb115b26e6b assets\mienmod\blockstates\box.json
 a2ac7e9052e2455a584eef5cec89bbf14488195b assets\mienmod\models\item\ice_ether_fence_gate.json
 3b9401c0f3940f01e02d33a38f5ced801bc8be2a assets\mienmod\models\item\ice_ether_fence.json
 872ffd6d888c0386f6372ea98bd82379f71738c6 assets\mienmod\models\item\ice_ether_helmet.json

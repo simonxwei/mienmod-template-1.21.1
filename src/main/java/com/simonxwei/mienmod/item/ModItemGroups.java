@@ -72,6 +72,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ICE_ETHER_WALL);
                         entries.add(ModBlocks.ICE_ETHER_DOOR);
                         entries.add(ModBlocks.ICE_ETHER_TRAPDOOR);
+                        entries.add(ModBlocks.BOX);
                     })
                     .build()
     );

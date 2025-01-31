@@ -1,5 +1,6 @@
 {
   "ItemGroup.mien_group": "自制模组群组",
+  "block.mienmod.box": "箱子",
   "block.mienmod.ice_ether_block": "冰之以太块",
   "block.mienmod.ice_ether_button": "冰之以太按钮",
   "block.mienmod.ice_ether_door": "冰之以太门",
@@ -12,6 +13,7 @@
   "block.mienmod.ice_ether_trapdoor": "冰之以太活板门",
   "block.mienmod.ice_ether_wall": "冰之以太墙",
   "block.mienmod.raw_ice_ether_block": "生冰之以太块",
+  "container.box": "箱子",
   "entity.minecraft.villager.ice_ether_master": "冰以太大师",
   "item.mienmod.anthracite": "无烟煤",
   "item.mienmod.cheese": "奶酪",

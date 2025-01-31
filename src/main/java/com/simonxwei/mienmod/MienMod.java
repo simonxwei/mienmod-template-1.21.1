@@ -1,6 +1,7 @@
 package com.simonxwei.mienmod;
 
 import com.simonxwei.mienmod.block.ModBlocks;
+import com.simonxwei.mienmod.entity.ModBlockEntities;
 import com.simonxwei.mienmod.item.ModItemGroups;
 import com.simonxwei.mienmod.item.ModItems;
 import com.simonxwei.mienmod.mixin.GrassColorsMixin;
@@ -46,6 +47,8 @@ public class MienMod implements ModInitializer {
 		ModVillagers.registerModVillagers();
 //		声音
 		ModSoundEvents.registerModSoundEvents();
+//		方块实体
+		ModBlockEntities.registerModBlocks();
 
 ////		通过Mixin，获取草方块的颜色
 //		int[] colorMap = GrassColorsMixin.getColorMap();
