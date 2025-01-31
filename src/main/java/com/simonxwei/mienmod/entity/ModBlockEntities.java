@@ -3,6 +3,9 @@ package com.simonxwei.mienmod.entity;
 import com.mojang.datafixers.types.Type;
 import com.simonxwei.mienmod.MienMod;
 import com.simonxwei.mienmod.block.ModBlocks;
+import com.simonxwei.mienmod.block.custom.PolishingMachine;
+import com.simonxwei.mienmod.entity.custom.BoxBlockEntity;
+import com.simonxwei.mienmod.entity.custom.PolishingMachineBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.datafixer.TypeReferences;
@@ -22,6 +25,15 @@ public class ModBlockEntities {
                     ModBlocks.BOX
             )
     );
+    public static final BlockEntityType<PolishingMachineBlockEntity> POLISHING_MACHINE_BLOCK_ENTITY = create(
+            "polishing_machine_block_entity",
+//            导入后标红，去PolishingMachineBlockEntity中同名构造函数的super函数中的type参数改为这里刚注册的BlockEntityType
+            BlockEntityType.Builder.create(
+                    PolishingMachineBlockEntity::new,
+                    ModBlocks.POLISHING_MACHINE
+            )
+    );
+
 //    注册方法
     private static <T extends BlockEntity> BlockEntityType<T> create(String id, BlockEntityType.Builder<T> builder) {
         Type<?> type = Util.getChoiceType(TypeReferences.BLOCK_ENTITY, id);

@@ -1,7 +1,7 @@
 package com.simonxwei.mienmod.block.custom;
 
 import com.mojang.serialization.MapCodec;
-import com.simonxwei.mienmod.entity.BoxBlockEntity;
+import com.simonxwei.mienmod.entity.custom.BoxBlockEntity;
 import com.simonxwei.mienmod.entity.ModBlockEntities;
 import net.minecraft.block.AbstractChestBlock;
 import net.minecraft.block.BlockRenderType;

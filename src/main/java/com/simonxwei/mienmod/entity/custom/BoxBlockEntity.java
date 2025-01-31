@@ -1,5 +1,6 @@
-package com.simonxwei.mienmod.entity;
+package com.simonxwei.mienmod.entity.custom;
 
+import com.simonxwei.mienmod.entity.ModBlockEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.entity.LootableContainerBlockEntity;

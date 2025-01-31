@@ -3,11 +3,11 @@ package com.simonxwei.mienmod.block;
 import com.simonxwei.mienmod.MienMod;
 import com.simonxwei.mienmod.block.custom.BoxBlock;
 import com.simonxwei.mienmod.block.custom.CornCropBlock;
+import com.simonxwei.mienmod.block.custom.PolishingMachine;
 import com.simonxwei.mienmod.block.custom.StrawberryCropBlock;
 import com.simonxwei.mienmod.entity.ModBlockEntities;
 import com.simonxwei.mienmod.sound.ModSoundEvents;
 import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -123,6 +123,10 @@ public class ModBlocks {
                     AbstractBlock.Settings.copy(Blocks.CHEST),
                     () -> ModBlockEntities.BOX
             )
+    );
+    public static final Block POLISHING_MACHINE = register(
+            "polishing_machine",
+            new PolishingMachine(AbstractBlock.Settings.copy(Blocks.STONE))
     );
 
 //    注册方块物品_step1

@@ -63,6 +63,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleState(ModBlocks.OIL);
 //        方块实体和流体类似，因为已经自制模型文件，故仅需设置方块状态
         blockStateModelGenerator.registerSimpleState(ModBlocks.BOX);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.POLISHING_MACHINE);
     }
 
     @Override

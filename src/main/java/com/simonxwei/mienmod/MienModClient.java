@@ -2,10 +2,13 @@ package com.simonxwei.mienmod;
 
 import com.simonxwei.mienmod.block.ModBlocks;
 import com.simonxwei.mienmod.block.ModFluids;
+import com.simonxwei.mienmod.screen.ModScreenHandlers;
+import com.simonxwei.mienmod.screen.PolishingMachineScreen;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
+import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
@@ -38,5 +41,7 @@ public class MienModClient implements ClientModInitializer {
                         0x42413b
                 )
         );
+//        注册了方块实体的屏幕处理和屏幕，用于显示方块实体GUI
+        HandledScreens.register(ModScreenHandlers.POLISHING_MACHINE_SCREEN_HANDLER, PolishingMachineScreen::new);
     }
 }

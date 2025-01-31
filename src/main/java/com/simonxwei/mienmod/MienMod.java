@@ -4,7 +4,7 @@ import com.simonxwei.mienmod.block.ModBlocks;
 import com.simonxwei.mienmod.entity.ModBlockEntities;
 import com.simonxwei.mienmod.item.ModItemGroups;
 import com.simonxwei.mienmod.item.ModItems;
-import com.simonxwei.mienmod.mixin.GrassColorsMixin;
+import com.simonxwei.mienmod.screen.ModScreenHandlers;
 import com.simonxwei.mienmod.sound.ModSoundEvents;
 import com.simonxwei.mienmod.tag.ModBlockTags;
 import com.simonxwei.mienmod.tag.ModItemTags;
@@ -13,7 +13,6 @@ import com.simonxwei.mienmod.util.ModLootTableModifiers;
 import com.simonxwei.mienmod.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -49,6 +48,8 @@ public class MienMod implements ModInitializer {
 		ModSoundEvents.registerModSoundEvents();
 //		方块实体
 		ModBlockEntities.registerModBlocks();
+//		方块实体的屏幕注册及渲染
+		ModScreenHandlers.registerModScreenHandlers();
 
 ////		通过Mixin，获取草方块的颜色
 //		int[] colorMap = GrassColorsMixin.getColorMap();
