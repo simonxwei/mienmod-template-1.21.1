@@ -16,6 +16,9 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+
+//	REI，添加Maven仓库
+	maven { url "https://maven.shedaniel.me" }
 }
 
 fabricApi {
@@ -32,7 +35,11 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
+//	REI，添加依赖，并在Linkie中查找替换版本号
+	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:16.0.788"
+//	修改modRuntimeOnly为modImplementation
+	modImplementation "me.shedaniel:RoughlyEnoughItems-fabric:16.0.788"
 }
 
 processResources {

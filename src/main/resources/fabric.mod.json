@@ -22,6 +22,9 @@
 		],
 		"client": [
 			"com.simonxwei.mienmod.MienModClient"
+		],
+		"rei_client": [
+			"com.simonxwei.mienmod.compat.ModREIClientPlugins"
 		]
 	},
 	"mixins": [
