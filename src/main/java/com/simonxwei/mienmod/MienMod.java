@@ -4,6 +4,7 @@ import com.simonxwei.mienmod.block.ModBlocks;
 import com.simonxwei.mienmod.entity.ModBlockEntities;
 import com.simonxwei.mienmod.item.ModItemGroups;
 import com.simonxwei.mienmod.item.ModItems;
+import com.simonxwei.mienmod.recipe.ModRecipeTypes;
 import com.simonxwei.mienmod.screen.ModScreenHandlers;
 import com.simonxwei.mienmod.sound.ModSoundEvents;
 import com.simonxwei.mienmod.tag.ModBlockTags;
@@ -50,6 +51,8 @@ public class MienMod implements ModInitializer {
 		ModBlockEntities.registerModBlocks();
 //		方块实体的屏幕注册及渲染
 		ModScreenHandlers.registerModScreenHandlers();
+//		配方类型
+		ModRecipeTypes.registerRecipeTypes();
 
 ////		通过Mixin，获取草方块的颜色
 //		int[] colorMap = GrassColorsMixin.getColorMap();

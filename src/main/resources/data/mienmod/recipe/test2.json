@@ -1,0 +1,12 @@
+{
+  "type": "mienmod:polishing_machine",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "output": {
+    "id": "minecraft:diamond"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "mienmod:polishing_machine",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mienmod:raw_ice_ether"
+    }
+  ],
+  "output": {
+    "count": 3,
+    "id": "mienmod:ice_ether"
+  }
+}
