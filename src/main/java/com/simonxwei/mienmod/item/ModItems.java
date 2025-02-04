@@ -69,6 +69,11 @@ public class ModItems {
                     new Item.Settings().maxCount(1)
             )
     );
+//    普通物品_自定义物品
+    public static final Item SIMPLE_ITEM = registerItems(
+            "simple_item",
+            new Item(new Item.Settings())
+    );
 
 //    2D -> 3D渲染物品
     public static final Item PLATE = registerItems(

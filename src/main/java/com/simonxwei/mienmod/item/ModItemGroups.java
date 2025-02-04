@@ -39,6 +39,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TEST_MUSIC_DISC);
                         entries.add(ModItems.OIL_BUCKET);
                         entries.add(ModItems.ICE_ETHER_HORSE_ARMOR);
+                        entries.add(ModItems.SIMPLE_ITEM);
 
 //                        高级物品
                         entries.add(ModItems.PROSPECTOR);
@@ -74,6 +75,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ICE_ETHER_TRAPDOOR);
                         entries.add(ModBlocks.BOX);
                         entries.add(ModBlocks.POLISHING_MACHINE);
+                        entries.add(ModBlocks.SIMPLE_BLOCK);
+                        entries.add(ModBlocks.SIMPLE_FENCE);
                     })
                     .build()
     );

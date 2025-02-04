@@ -32,6 +32,7 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.TEST_MUSIC_DISC, "测试音乐唱片");
         translationBuilder.add(ModItems.OIL_BUCKET, "油桶");
         translationBuilder.add(ModItems.ICE_ETHER_HORSE_ARMOR, "冰以太马甲");
+        translationBuilder.add(ModItems.SIMPLE_ITEM, "简单物品");
 
 //        高级物品翻译
         translationBuilder.add((ModItems.PROSPECTOR), "探矿器");
@@ -67,6 +68,8 @@ public class ModZHCNLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ICE_ETHER_TRAPDOOR, "冰之以太活板门");
         translationBuilder.add(ModBlocks.BOX, "箱子");
         translationBuilder.add(ModBlocks.POLISHING_MACHINE, "抛光机");
+        translationBuilder.add(ModBlocks.SIMPLE_BLOCK, "简单方块");
+        translationBuilder.add(ModBlocks.SIMPLE_FENCE, "简单栅栏");
 
 //        提示信息翻译
         translationBuilder.add("item.mienmod.prospector.shift_tooltip", "用于探矿的工具");

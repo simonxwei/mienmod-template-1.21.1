@@ -33,6 +33,7 @@ public class ModENUSLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.TEST_MUSIC_DISC, "Test Music Disc");
         translationBuilder.add(ModItems.OIL_BUCKET, "Oil Bucket");
         translationBuilder.add(ModItems.ICE_ETHER_HORSE_ARMOR, "Ice Ether Horse Armor");
+        translationBuilder.add(ModItems.SIMPLE_ITEM, "Simple Item");
 
 //        高级物品翻译
         translationBuilder.add((ModItems.PROSPECTOR), "Prospector");
@@ -68,6 +69,8 @@ public class ModENUSLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ICE_ETHER_TRAPDOOR, "Ice Ether Trapdoor");
         translationBuilder.add(ModBlocks.BOX, "Box");
         translationBuilder.add(ModBlocks.POLISHING_MACHINE, "Polishing Machine");
+        translationBuilder.add(ModBlocks.SIMPLE_BLOCK, "Simple Block");
+        translationBuilder.add(ModBlocks.SIMPLE_FENCE, "Simple Fence");
 
 //        提示信息翻译
         translationBuilder.add("item.mienmod.prospector.shift_tooltip", "A tool used to prospect ores");

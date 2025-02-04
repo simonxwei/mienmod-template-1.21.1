@@ -1,10 +1,7 @@
 package com.simonxwei.mienmod.block;
 
 import com.simonxwei.mienmod.MienMod;
-import com.simonxwei.mienmod.block.custom.BoxBlock;
-import com.simonxwei.mienmod.block.custom.CornCropBlock;
-import com.simonxwei.mienmod.block.custom.PolishingMachine;
-import com.simonxwei.mienmod.block.custom.StrawberryCropBlock;
+import com.simonxwei.mienmod.block.custom.*;
 import com.simonxwei.mienmod.entity.ModBlockEntities;
 import com.simonxwei.mienmod.sound.ModSoundEvents;
 import net.minecraft.block.*;
@@ -113,6 +110,16 @@ public class ModBlocks {
             Registries.BLOCK,
             Identifier.of(MienMod.MOD_ID, "oil"),
             new FluidBlock(ModFluids.OIL, AbstractBlock.Settings.copy(Blocks.WATER))
+    );
+
+//    简单方块
+    public static final Block SIMPLE_BLOCK = register(
+            "simple_block",
+            new SimpleBlock(AbstractBlock.Settings.copy(Blocks.STONE))
+    );
+    public static final Block SIMPLE_FENCE = register(
+            "simple_fence",
+            new SimpleFence(AbstractBlock.Settings.copy(Blocks.STONE).nonOpaque())
     );
 
 //    方块实体

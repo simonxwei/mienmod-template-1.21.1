@@ -64,6 +64,11 @@ public class ModModelsProvider extends FabricModelProvider {
 //        方块实体和流体类似，因为已经自制模型文件，故仅需设置方块状态
         blockStateModelGenerator.registerSimpleState(ModBlocks.BOX);
         blockStateModelGenerator.registerSimpleState(ModBlocks.POLISHING_MACHINE);
+////        简单方块，因为已经自制模型文件，故仅需设置方块状态
+//        blockStateModelGenerator.registerSimpleState(ModBlocks.SIMPLE_BLOCK);
+
+//        仅设置完朝向且默认方向朝北的方块状态设置
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.SIMPLE_BLOCK);
     }
 
     @Override
